@@ -236,11 +236,78 @@ class SingleLinkedList:
     def insert_cycle(self, x):
         pass
 
-    def merge2(self, list2):
-        pass
+    # def merge1(self, list2):
+    #     merge_list = SingleLinkedList()
+    #     merge_list.start = self._merge1(self.start, list2.start)
+    #     return merge_list
 
-    def _merge2(self, p1, p2):
-        pass
+
+    # def _merge1(self, p1, p2):
+    #     if p1.info <= p2.info:
+    #         startM = Node(p1.info)
+    #         p1 = p1.link
+    #     else:
+    #         startM = Node(p2.info)
+    #         p2 = p2.link
+        
+    #     pM = startM
+
+    #     while p1 is not None and p2 is not None:
+    #         if p1.info <= p2.info:
+    #             pM.link = Node(p1.info)
+    #             p1 = p1.link
+    #         else:
+    #             pM.link = Node(p2.info)
+    #             p2 = p2.link
+    #         pM = pM.link
+
+    #     # If the second list has finished and elements left in first list
+    #     while p1 is not None:
+    #         pM.link = Node(p1.info)
+    #         p1 = p1.link
+    #         pM = pM.link
+
+    #     # If first list has finished and elements left in second list
+    #     while p2 is not None:
+    #         pM.link = Node(p1.info)
+    #         p2 = p2.link
+    #         pM = pM.link
+
+    #     return startM
+    
+
+    # def merge2(self, list2):
+    #     merge_list = SingleLinkedList()
+    #     merge_list.start = self._merge2(self.start, list2.start)
+    #     return merge_list
+
+    # def _merge2(self, p1, p2):
+
+    #     if p1.info <= p2.info:
+    #         startM = p1
+    #         p1 = p1.link
+    #     else:
+    #         startM = p2
+    #         p2 = p2.link
+
+    #     pM = startM
+
+    #     while p1 is not None and p2 is not None:
+    #         if p1.info <= p2.info:
+    #             pM.link = p1
+    #             pM = pM.link
+    #             p1 = p1.link
+    #         else:
+    #             pM.link = p2
+    #             pM = pM.link
+    #             p2 = p2.link
+
+    #     if p1 is None:
+    #         pM.link = p2
+    #     else:
+    #         pM.link = p2
+
+    #     return startM
 
     def merge_sort(self):
         pass
@@ -254,10 +321,8 @@ class SingleLinkedList:
 
 
 ###########################################################################
-
 list = SingleLinkedList()
 list.create_list()
-
 
 while True:
     print("1. Display List")
